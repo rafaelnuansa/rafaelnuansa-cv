@@ -43,7 +43,7 @@
 		</div>
 	  </section>
   
-	  <section data-aos="fade-up" class="photo-profile hidden lg:flex items-center justify-center">
+	  <section data-aos="fade-up" class="photo-profile hidden lg:flex items-center justify-center" :class="{hide: isMobile}">
 		<img src="/images/rafael.webp" class="w-full max-w-sm rounded-lg shadow-lg">
 	  </section>
   
