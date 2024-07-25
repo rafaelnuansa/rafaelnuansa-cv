@@ -10,7 +10,7 @@
       <!-- DESKTOP section icons -->
       <div id="sections">
         <div id="section-icon" v-for="section in config.dev.about.sections" :key="section.title"
-          :class="{ active: isSectionActive(section.title)}">
+          :class="{ active: isSectionActive(section.title) }">
           <img :id="'section-icon-' + section.title" :src="section.icon" :alt="section.title + '-section'"
             @click="focusCurrentSection(section)">
         </div>
@@ -31,9 +31,9 @@
             class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text"
             @click="focusCurrentFolder(folder)">
             <div class="flex col-span-2 hover:text-white hover:cursor-pointer">
-              <img id="diple" src="/icons/diple.svg" alt="" :class="{ open: isOpen(folder.title)}">
-              <img :src="'/icons/folder' + (index+1) + '.svg'" alt="" class="mr-3">
-              <p :id="folder.title" v-html="key" :class="{ active: isActive(folder.title)}"></p>
+              <img id="diple" src="/icons/diple.svg" alt="" :class="{ open: isOpen(folder.title) }">
+              <img :src="'/icons/folder' + (index + 1) + '.svg'" alt="" class="mr-3">
+              <p :id="folder.title" v-html="key" :class="{ active: isActive(folder.title) }"></p>
             </div>
             <div v-if="folder.files !== undefined" class="col-span-2">
               <div v-for="(file, key) in folder.files" :key="key"
@@ -46,7 +46,7 @@
         </div>
 
         <!-- contact -->
-  
+
 
       </div>
 
@@ -109,15 +109,15 @@
 
       </div>
 
-   
+
     </div>
   </main>
 </template>
 
 <style>
-
 #sections {
-  width: 5rem; /* 80px */
+  width: 5rem;
+  /* 80px */
   height: 100%;
   display: none;
   border-right: 1px solid #1E2D3D;
@@ -153,7 +153,7 @@
   align-items: flex-end;
 }
 
-#scroll-bar{
+#scroll-bar {
   width: 20px;
 }
 
@@ -172,10 +172,11 @@
 }
 
 .active {
-  color:white;
+  color: white;
 }
 
-#right, #left {
+#right,
+#left {
   height: 100%;
   overflow: hidden;
 }
@@ -193,8 +194,8 @@
   }
 
   #about {
-  min-height: stretch;
-}
+    min-height: stretch;
+  }
 }
 
 .section-arrow {
@@ -204,7 +205,6 @@
 #section-content #contacts {
   padding: 0px 25px;
 }
-
 </style>
 
 <script>
@@ -255,14 +255,14 @@ export default {
      * TODO: Hay que crear un método para que cuando se haga click en un folder, se muestren los archivos que contiene. Y si se hace click en un archivo, se muestre el contenido del archivo.
      * TODO:  Además de girar el icono del diple.
      */
- 
+
     /* Mobile */
     showContacts() {
       document.getElementById('contacts').classList.toggle('hidden')
       document.getElementById('section-arrow').classList.toggle('rotate-90'); // rotate arrow
     },
   },
-  mounted(){
+  mounted() {
     this.loading = false
   }
 }

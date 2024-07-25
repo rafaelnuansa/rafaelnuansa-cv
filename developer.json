@@ -1,168 +1,167 @@
 {
-    "name": "Rafael Nuansa",
-    "logo_name": "rafael-nuansa",
-    "role": "Web Developer",
-    "about": {
-        "sections": {
-            "my-profile": {
-                "title": "my-profile",
-                "icon": "icons/info-professional.svg",
-                "info": {
-                    "bio": {
-                        "title": "bio",
-                        "description": "<br> Nama saya Rafael Nuansa. Saya memiliki pengalaman kerja selama 5 tahun sebagai web developer di Universitas Djuanda. Selama bekerja di sana, saya telah mengembangkan dan memelihara berbagai aplikasi web untuk mendukung kegiatan akademik dan administrasi. Selain pekerjaan utama saya, saya juga sering mengambil pekerjaan freelance di berbagai tempat, yang memungkinkan saya untuk terus mengembangkan keahlian saya dan menghadapi tantangan baru di bidang pengembangan web."
-                    },
-                    "education": {
-                        "title": "education",
-                        "description": "<br> Saya adalah lulusan SMK Amaliah 1 Ciawi dengan jurusan Teknik Komputer dan Jaringan, di mana saya menempuh pendidikan dari tahun 2015 hingga 2018. Selama tiga tahun tersebut, saya memperoleh pengetahuan dan keterampilan mendalam dalam bidang jaringan komputer dan teknologi informasi. Setelah lulus, saya melanjutkan studi ke jenjang S1 di Universitas Djuanda dengan Program Studi Ilmu Komputer, dengan fokus pada pemrograman. Saya mulai kuliah pada tahun 2021 dan saat ini masih aktif menempuh pendidikan di sana, terus mengembangkan keahlian saya dalam berbagai bahasa dan teknik pemrograman.."
-                    }
-                }
-            }
+  "name": "Rafael Nuansa",
+  "logo_name": "@rafaelnuansa",
+  "role": "Web Developer",
+  "about": {
+    "sections": {
+      "my-profile": {
+        "title": "my-profile",
+        "icon": "icons/info-professional.svg",
+        "info": {
+          "bio": {
+            "title": "bio",
+            "description": "Halo, Perkenalkan Nama saya Rafael Nuansa. Saya memiliki pengalaman kerja selama 5 tahun sebagai web developer di Universitas Djuanda. Selama bekerja di sana, saya telah mengembangkan dan memelihara berbagai aplikasi web untuk mendukung kegiatan akademik dan administrasi. Selain pekerjaan utama saya, saya juga sering mengambil pekerjaan freelance di berbagai tempat, yang memungkinkan saya untuk terus mengembangkan keahlian saya dan menghadapi tantangan baru di bidang pengembangan web."
+          },
+          "education": {
+            "title": "education",
+            "description": "Saya adalah lulusan SMK Amaliah 1 Ciawi dengan jurusan Teknik Komputer dan Jaringan, di mana saya menempuh pendidikan dari tahun 2015 hingga 2018. Selama tiga tahun tersebut, saya memperoleh pengetahuan dan keterampilan mendalam dalam bidang jaringan komputer dan teknologi informasi. Setelah lulus, saya melanjutkan studi ke jenjang S1 di Universitas Djuanda dengan Program Studi Ilmu Komputer, dengan fokus pada pemrograman. Saya mulai kuliah pada tahun 2021 dan saat ini masih aktif menempuh pendidikan di sana, terus mengembangkan keahlian saya dalam berbagai bahasa dan teknik pemrograman.."
+          }
          
         }
-    },
-    "contacts": {
-        
-        "social": {
-            "github": {
-                "title": "Github profile",
-                "url": "https://github.com/",
-                "user": "rafaelnuansa"
-            },
-            "facebook": {
-                "title": "Facebook profile",
-                "url": "https://facebook.com/",
-                "user": "rafaelnuansaid"
-            },
-            "twitter": {
-                "title": "Twitter account",
-                "url": "https://twitter.com/",
-                "user": "rafaelnuansa"
-            },
-            "instagram": {
-                "title": "Instagram account",
-                "url": "https://instagram.com/",
-                "user": "rafaelnuansa"
-            }
-        },
-        "find_me_also_in": {
-            "title": "find-me-also-in",
-            "sources": {
-                "youtube": {
-                    "title": "YouTube channel",
-                    "url": "https://www.youtube.com/",
-                    "user": "username"
-                },
-                "instagram": {
-                    "title": "Instagram account",
-                    "url": "https://instagram.com/",
-                    "user": "rafaelnuansa"
-                }
-            }
-        }
-    },
-    "gists": {
-        "1": "83861a67e377633ee8368df01ee3a355",
-        "2": "694c1f32332788a2ac7f37b09e5aa40e"
-    },
-    "projects": {
-        "1": {
-            "title": "_universitas-djuanda",
-            "description": "CMS & App dev at Djuanda University",
-            "img": "/images/projects/unida.png",
-            "tech": ["PHP"],
-            "url": "https://unida.ac.id/"
-        },
-        "2": {
-            "title": "_teknikits",
-            "description": "Teknikits Home Service Application Web & Android",
-            "img": "/images/projects/teknikits.png",
-            "tech": ["React"],
-            "url": "https://teknikits.com/"
-        },
-        "3": {
-            "title": "_irin-bestindo-sejahtera",
-            "description": "Company Profile & Catalogue PT Irin Bestindo Sejahtera",
-            "img": "/images/projects/irin.png",
-            "tech": ["React"],
-            "url": "https://irinbestindo.ziplinetower.com"
-        },
-        "4": {
-            "title": "_binbaz-travel",
-            "description": "Travel Hajj & Umrah Booking & Company Profile PT Binbaz Travel",
-            "img": "/images/projects/binbaz.png",
-            "tech": ["React"],
-            "url": "https://binbaztravel.ziplinetower.com"
-        },
-        "5": {
-            "title": "_patrol",
-            "description": "Presences Mobile App & Patrol for PT Tri Garda Buana Sakti.",
-            "img": "/images/projects/patrol.png",
-            "tech": ["React"],
-            "url": "#"
-        },
-        "6": {
-            "title": "_kowaja",
-            "description": "Kowaja App Malaysian online loan application, ReactJS",
-            "img": "/images/projects/kowaja.png",
-            "tech": ["React"],
-            "url": "https://kowaja.netlify.app"
-        },
-        "7": {
-            "title": "_billiard-pos",
-            "description": "POS Billiard with InertiaJS, Laravel Reactjs.",
-            "img": "/images/projects/billiard.png",
-            "tech": ["React"],
-            "url": "https://kowaja.vercel.app"
-        },
-        "8": {
-            "title": "_carwash-pos",
-            "description": "Carwash Mobile and CMS Laravel + Flutter.",
-            "img": "/images/projects/carwash.png",
-            "tech": ["React"],
-            "url": "https://kowaja.vercel.app"
-        },
-        "9": {
-            "title": "_asis_school",
-            "description": "Academics Smart School with Codeigniter",
-            "img": "/images/projects/asis.png",
-            "tech": ["Codeigniter"],
-            "url": "https://yanuris.or.id/asis/asisSMK/asispanel/"
-        },
-        "10": {
-            "title": "_ticketing-pos",
-            "description": "Ticket App with Flutter",
-            "img": "/images/projects/ticket.png",
-            "tech": ["React"],
-            "url": "https://www.instagram.com/reel/CxDEzx_yqSX/"
-        },
-        "11": {
-            "title": "_edgepos",
-            "description": "EdgePOS Laravel Point Of Sales",
-            "img": "/images/projects/edgepos.png",
-            "tech": ["React"],
-            "url": "https://v2.edgepos.site/"
-        },
-        "12": {
-            "title": "_heysnap",
-            "description": "Heysnap Photostudio Booking with Laravel",
-            "img": "/images/projects/heysnap.png",
-            "tech": ["React"],
-            "url": "https://heysnapv2.progranz.com"
-        },
-        "13": {
-            "title": "_bogor-berwisata",
-            "description": "Bogor Berwisata with Laravel + ReactJS",
-            "img": "/images/projects/bogor-wisata.png",
-            "tech": ["React"],
-            "url": "https://bogorberwisata.netlify.app/"
-        },
-        "14": {
-            "title": "_pokdarwis-tenjolaya",
-            "description": "Pokdarwis Tenjolaya with Laravel",
-            "img": "/images/projects/pokdarwis.png",
-            "tech": ["React"],
-            "url": "https://pokdarwistenjolaya.com/"
-        }
+      }
     }
+  },
+  "contacts": {
+    "social": {
+      "github": {
+        "title": "Github profile",
+        "url": "https://github.com/",
+        "user": "rafaelnuansa"
+      },
+      "facebook": {
+        "title": "Facebook profile",
+        "url": "https://facebook.com/",
+        "user": "rafaelnuansaid"
+      },
+      "twitter": {
+        "title": "Twitter account",
+        "url": "https://twitter.com/",
+        "user": "rafaelnuansa"
+      },
+      "instagram": {
+        "title": "Instagram account",
+        "url": "https://instagram.com/",
+        "user": "rafaelnuansa"
+      }
+    },
+    "find_me_also_in": {
+      "title": "find-me-also-in",
+      "sources": {
+        "youtube": {
+          "title": "YouTube channel",
+          "url": "https://www.youtube.com/",
+          "user": "username"
+        },
+        "instagram": {
+          "title": "Instagram account",
+          "url": "https://instagram.com/",
+          "user": "rafaelnuansa"
+        }
+      }
+    }
+  },
+  "gists": {
+    "1": "83861a67e377633ee8368df01ee3a355",
+    "2": "694c1f32332788a2ac7f37b09e5aa40e"
+  },
+  "projects": {
+    "1": {
+      "title": "_universitas-djuanda",
+      "description": "CMS & App dev at Djuanda University",
+      "img": "/images/projects/unida.png",
+      "tech": ["PHP"],
+      "url": "https://unida.ac.id/"
+    },
+    "2": {
+      "title": "_teknikits",
+      "description": "Teknikits Home Service Application Web & Android",
+      "img": "/images/projects/teknikits.png",
+      "tech": ["React"],
+      "url": "https://teknikits.com/"
+    },
+    "3": {
+      "title": "_irin-bestindo-sejahtera",
+      "description": "Company Profile & Catalogue PT Irin Bestindo Sejahtera",
+      "img": "/images/projects/irin.png",
+      "tech": ["React"],
+      "url": "https://irinbestindo.ziplinetower.com"
+    },
+    "4": {
+      "title": "_binbaz-travel",
+      "description": "Travel Hajj & Umrah Booking & Company Profile PT Binbaz Travel",
+      "img": "/images/projects/binbaz.png",
+      "tech": ["React"],
+      "url": "https://binbaztravel.ziplinetower.com"
+    },
+    "5": {
+      "title": "_patrol",
+      "description": "Presences Mobile App & Patrol for PT Tri Garda Buana Sakti.",
+      "img": "/images/projects/patrol.png",
+      "tech": ["React"],
+      "url": "#"
+    },
+    "6": {
+      "title": "_kowaja",
+      "description": "Kowaja App Malaysian online loan application, ReactJS",
+      "img": "/images/projects/kowaja.png",
+      "tech": ["React"],
+      "url": "https://kowaja.netlify.app"
+    },
+    "7": {
+      "title": "_billiard-pos",
+      "description": "POS Billiard with InertiaJS, Laravel Reactjs.",
+      "img": "/images/projects/billiard.png",
+      "tech": ["React"],
+      "url": "https://kowaja.vercel.app"
+    },
+    "8": {
+      "title": "_carwash-pos",
+      "description": "Carwash Mobile and CMS Laravel + Flutter.",
+      "img": "/images/projects/carwash.png",
+      "tech": ["React"],
+      "url": "https://kowaja.vercel.app"
+    },
+    "9": {
+      "title": "_asis_school",
+      "description": "Academics Smart School with Codeigniter",
+      "img": "/images/projects/asis.png",
+      "tech": ["Codeigniter"],
+      "url": "https://yanuris.or.id/asis/asisSMK/asispanel/"
+    },
+    "10": {
+      "title": "_ticketing-pos",
+      "description": "Ticket App with Flutter",
+      "img": "/images/projects/ticket.png",
+      "tech": ["React"],
+      "url": "https://www.instagram.com/reel/CxDEzx_yqSX/"
+    },
+    "11": {
+      "title": "_edgepos",
+      "description": "EdgePOS Laravel Point Of Sales",
+      "img": "/images/projects/edgepos.png",
+      "tech": ["React"],
+      "url": "https://v2.edgepos.site/"
+    },
+    "12": {
+      "title": "_heysnap",
+      "description": "Heysnap Photostudio Booking with Laravel",
+      "img": "/images/projects/heysnap.png",
+      "tech": ["React"],
+      "url": "https://heysnapv2.progranz.com"
+    },
+    "13": {
+      "title": "_bogor-berwisata",
+      "description": "Bogor Berwisata with Laravel + ReactJS",
+      "img": "/images/projects/bogor-wisata.png",
+      "tech": ["React"],
+      "url": "https://bogorberwisata.netlify.app/"
+    },
+    "14": {
+      "title": "_pokdarwis-tenjolaya",
+      "description": "Pokdarwis Tenjolaya with Laravel",
+      "img": "/images/projects/pokdarwis.png",
+      "tech": ["React"],
+      "url": "https://pokdarwistenjolaya.com/"
+    }
+  }
 }

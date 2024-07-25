@@ -1,184 +1,199 @@
 <template>
 	<main v-if="!loading" id="hello">
-  
-	  <!-- gradients -->
-	  <div class="css-blurry-gradient-blue"></div>
-	  <div class="css-blurry-gradient-green"></div>
-  
-	  <section class="hero">
-  
-		<div class="head">
-		  <span>
-			Hello, My Name is
-		  </span>
-		  <h1>{{ config.dev.name }}</h1>
-		  <span class="diple flex">
-			>&nbsp;
-			<h2 class="line-1 anim-typewriter max-w-fit"> {{ config.dev.role }} </h2>
-		  </span>
-		</div>
-  
-		<div id="info">
-  
-		  <span :class="{hide: isMobile}">
-			// find my profile on Github:
-		  </span>
-		  <span :class="{hide: !isMobile}">
-			// find my profile on Github:
-		  </span>
-		  <p class="code">
-			<span class="identifier">
-			  const
-			</span>
-			<span class="variable-name">
-			  githubProfileUrl
-			</span>
-			<span class="operator">
-			  =
-			</span>
-			<a class="string" :href="'https://github.com/' + config.public.dev.contacts.social.github.user">
-			  "https://github.com/{{ config.public.dev.contacts.social.github.user }}"
-			</a>
-		  </p>
-		</div>
-	  </section>
-  
-	  <section data-aos="fade-up" class="photo-profile hidden lg:flex items-center justify-center" :class="{hide: isMobile}">
-		<img src="/images/rafael.webp" class="w-full max-w-sm rounded-lg shadow-lg">
-	  </section>
-  
+
+		<!-- gradients -->
+		<div class="css-blurry-gradient-blue"></div>
+		<div class="css-blurry-gradient-green"></div>
+
+		<section class="hero">
+
+			<div class="head">
+				<span>
+					Hello, My Name is
+				</span>
+				<h1>{{ config.dev.name }}</h1>
+				<span class="diple flex">
+					>&nbsp;
+					<h2 class="line-1 anim-typewriter max-w-fit"> {{ config.dev.role }} </h2>
+				</span>
+			</div>
+
+			<div class=" flex items-center justify-center" :class="{ hide: !isMobile }">
+				<img src="/images/rafael.webp" class="w-full max-w-full rounded-lg shadow-lg">
+			</div>
+
+			<div id="info">
+
+				<span :class="{ hide: isMobile }">
+					// find my profile on Github:
+				</span>
+				<span :class="{ hide: !isMobile }">
+					// find my profile on Github:
+				</span>
+
+				<p class="code">
+					<span class="identifier">
+						const
+					</span>
+					<span class="variable-name">
+						githubProfileUrl
+					</span>
+					<span class="operator">
+						=
+					</span>
+
+					<a class="string" :href="'https://github.com/' + config.public.dev.contacts.social.github.user">
+						"https://github.com/{{ config.public.dev.contacts.social.github.user }}"
+					</a>
+				</p>
+
+
+			</div>
+		</section>
+
+		<section data-aos="fade-up" class="photo-profile hidden lg:flex items-center justify-center"
+			:class="{ hide: isMobile }">
+			<img src="/images/rafael.webp" class="w-full max-w-sm rounded-lg shadow-lg">
+		</section>
+
 	</main>
-  </template>
-  
-  <script setup>
-  import { ref, onMounted, onBeforeUnmount } from 'vue'
-  
-  const config = useRuntimeConfig()
-  
-  const isMobile = ref(false)
-  const loading = ref(false)
-  
-  onMounted(() => {
+</template>
+
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+
+const config = useRuntimeConfig()
+
+const isMobile = ref(false)
+const loading = ref(false)
+
+onMounted(() => {
 	if (window.innerWidth <= 1024) isMobile.value = true
 	window.addEventListener('resize', handleResize)
-  })
-  
-  onBeforeUnmount(() => {
+})
+
+onBeforeUnmount(() => {
 	window.removeEventListener('resize', handleResize)
-  })
-  
-  function handleResize() {
+})
+
+function handleResize() {
 	if (window.innerWidth <= 1024) {
-	  isMobile.value = true
+		isMobile.value = true
 	} else {
-	  isMobile.value = false
+		isMobile.value = false
 	}
-  }
-  </script>
-  
-  <style scoped>
-  #hello {
+}
+</script>
+
+<style scoped>
+#hello {
 	display: flex;
 	height: 100%;
 	width: 100%;
 	flex: 1 1 auto;
 	padding-left: 275px;
 	overflow: hidden;
-  }
-  .hero {
+}
+
+.hero {
 	width: 100%;
 	justify-content: center;
-  }
-  .photo-profile {
+}
+
+.photo-profile {
 	display: flex;
 	width: 100%;
 	height: 100%;
 	justify-content: center;
 	z-index: 20;
-  }
-  
-  #hello .hero {
+}
+
+#hello .hero {
 	display: flex;
 	flex-direction: column;
 	margin: 0rem;
-  }
-  
-  #hello .head span {
+}
+
+#hello .head span {
 	font-size: 18px;
 	line-height: 1;
 	color: #E5E9F0;
 	font-family: 'Fira Code Retina';
-  }
-  
-  #hello .head h1 {
+}
+
+#hello .head h1 {
 	font-size: 58px;
 	line-height: 1;
 	color: #E5E9F0;
 	font-family: 'Fira Code Regular';
-	padding-top: 1rem; /* 16px */
-	padding-bottom: 1rem; /* 16px */
-  }
-  
-  #hello .head h2, #hello .head .diple {
+	padding-top: 1rem;
+	/* 16px */
+	padding-bottom: 1rem;
+	/* 16px */
+}
+
+#hello .head h2,
+#hello .head .diple {
 	font-size: 32px;
 	line-height: 1;
 	color: #4D5BCE;
 	font-family: 'Fira Code Retina';
-  }
-  
-  .head {
+}
+
+.head {
 	padding-bottom: 3rem;
-  }
-  
-  #info {
+}
+
+#info {
 	display: flex;
 	flex-direction: column;
-  }
-  
-  #info > span {
+}
+
+#info>span {
 	font-size: 14px;
 	line-height: 1;
 	color: #607B96;
 	font-family: 'Fira Code Retina';
-	padding-bottom: 1rem; /* 16px */
-  }
-  
-  .code {
+	padding-bottom: 1rem;
+	/* 16px */
+}
+
+.code {
 	font-family: 'Fira Code Medium';
 	color: #E5E9F0;
-  }
-  
-  .code .identifier {
+}
+
+.code .identifier {
 	color: #4D5BCE;
-  }
-  
-  .code .variable-name {
+}
+
+.code .variable-name {
 	color: #43D9AD;
-  }
-  
-  .code .operator {
+}
+
+.code .operator {
 	color: white;
-  }
-  
-  .code .string {
+}
+
+.code .string {
 	color: #E99287;
 	text-decoration-line: underline;
 	text-underline-offset: 4px;
-  }
-  
-  #info {
+}
+
+#info {
 	padding-block: 2.5rem;
-  }
-  
-  #info .action {
+}
+
+#info .action {
 	display: flex
-  }
-  
-  .hide {
+}
+
+.hide {
 	display: none;
-  }
-  
-  .css-blurry-gradient-blue {
+}
+
+.css-blurry-gradient-blue {
 	position: fixed;
 	bottom: 25%;
 	right: 5%;
@@ -187,12 +202,12 @@
 	border-radius: 0% 0% 50% 50%;
 	rotate: 10deg;
 	filter: blur(70px);
-	background: radial-gradient(circle at 50% 50%,rgba(77, 91, 206, 1), rgba(76, 0, 255, 0));
+	background: radial-gradient(circle at 50% 50%, rgba(77, 91, 206, 1), rgba(76, 0, 255, 0));
 	opacity: 0.5;
 	z-index: 10;
-  }
-  
-  .css-blurry-gradient-green {
+}
+
+.css-blurry-gradient-green {
 	position: absolute;
 	top: 20%;
 	right: 30%;
@@ -200,125 +215,139 @@
 	height: 300px;
 	border-radius: 0% 50% 0% 50%;
 	filter: blur(70px);
-	background: radial-gradient(circle at 50% 50%,rgba(67, 217, 173, 1), rgba(76, 0, 255, 0));
+	background: radial-gradient(circle at 50% 50%, rgba(67, 217, 173, 1), rgba(76, 0, 255, 0));
 	opacity: 0.5;
 	z-index: 10;
-  }
-  
-  #info {
+}
+
+#info {
 	font-size: 14px;
-  }
-  
-  /* Typewrite Animation */
-  
-  .line-1 {
+}
+
+/* Typewrite Animation */
+
+.line-1 {
 	width: fit-content;
-	border-right: 3px solid rgba(255,255,255,.75);
+	border-right: 3px solid rgba(255, 255, 255, .75);
 	white-space: nowrap;
 	overflow: hidden;
 	padding-right: 2px;
-  }
-  
-  .anim-typewriter {
+}
+
+.anim-typewriter {
 	animation: typewriter 3.5s steps(40) 1s 1 normal both,
-	blinkTextCursor 800ms steps(40) infinite normal;
-  }
-  
-  @keyframes typewriter {
-	from { width: 0; }
-	to { width: 100%; }
-  }
-  
-  @keyframes blinkTextCursor {
-	from { border-right-color: rgba(255,255,255,.75); }
-	to { border-right-color: transparent; }
-  }
-  
-  /* mobile */
-  @media (max-width: 768px) {
+		blinkTextCursor 800ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes blinkTextCursor {
+	from {
+		border-right-color: rgba(255, 255, 255, .75);
+	}
+
+	to {
+		border-right-color: transparent;
+	}
+}
+
+/* mobile */
+@media (max-width: 768px) {
 	#hello {
-	  padding-left: 0;
+		padding-left: 0;
 	}
-  
+
 	#hello .hero {
-	  display: flex;
-	  flex-direction: column;
-	  justify-content: space-between;
-	  margin: 1.75rem; /* 28px */
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 1.75rem;
+		/* 28px */
 	}
-  
+
 	.head {
-	  padding-top: 4rem; /* 40px */
+		padding-top: 4rem;
+		/* 40px */
 	}
-  
-	#hello .head h2, #hello .head .diple {
-	  font-size: 20px;
-	  color: #43D9AD;
+
+	#hello .head h2,
+	#hello .head .diple {
+		font-size: 20px;
+		color: #43D9AD;
 	}
-  
+
 	#info .action {
-	  display: none;
+		display: none;
 	}
-  }
-  
-  /* tablet */
-  @media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
 	#hello {
-	  padding-left: 0;
+		padding-left: 0;
 	}
-  
+
 	#hello .hero {
-	  display: flex;
-	  flex-direction: column;
-	  justify-content: center;
-	  margin: 1.75rem; /* 28px */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 1.75rem;
+		/* 28px */
 	}
-  
+
 	.head {
-	  padding-top: 4rem; /* 40px */
+		padding-top: 4rem;
+		/* 40px */
 	}
-  }
-  
-  @media (min-width: 1024px) and (max-width: 1320px) {
+}
+
+@media (min-width: 1024px) and (max-width: 1320px) {
 	#hello {
-	  padding-left: 135px;
+		padding-left: 135px;
 	}
-  }
-  
-  /* LG */
-  @media (min-width: 1024px) {
+}
+
+/* LG */
+@media (min-width: 1024px) {
 	.css-blurry-gradient-blue {
-	  position: fixed;
-	  bottom: 10%;
-	  right: 10%;
-	  width: 500px;
-	  height: 500px;
-	  opacity: 0.7;
-	  border-radius: 100% 50% 100% 0%;
+		position: fixed;
+		bottom: 10%;
+		right: 10%;
+		width: 500px;
+		height: 500px;
+		opacity: 0.7;
+		border-radius: 100% 50% 100% 0%;
 	}
-  
+
 	.css-blurry-gradient-green {
-	  position: fixed;
-	  top: 10%;
-	  right: 35%;
-	  filter: blur(100px);
-	  rotate: 10deg;
-	  width: 400px;
-	  height: 400px;
-	  opacity: 0.5;
-	  border-radius: 100% 0% 0% 0%;
-	  rotate: 20deg;
+		position: fixed;
+		top: 10%;
+		right: 35%;
+		filter: blur(100px);
+		rotate: 10deg;
+		width: 400px;
+		height: 400px;
+		opacity: 0.5;
+		border-radius: 100% 0% 0% 0%;
+		rotate: 20deg;
 	}
-  }
-  
-  @media (min-width: 1920px) {
+}
+
+@media (min-width: 1920px) {
 	#hello {
-	  padding-left: 310px;
+		padding-left: 310px;
 	}
-  
+
 	#hello .head h1 {
-	  font-size: 62px;
+		font-size: 62px;
 	}
-  }
-  </style>
-  
+}
+</style>

@@ -23,6 +23,13 @@
         <NuxtLink id="nav-link-mobile" to="/projects" :class="{ active: isActive('/projects') }" @click="toggleMobileMenu()">
           _projects
         </NuxtLink>
+        <NuxtLink id="nav-link-mobile" to="/experience" :class="{ active: isActive('/experience') }" @click="toggleMobileMenu()">
+          _experience
+        </NuxtLink>
+        <NuxtLink id="nav-link-mobile" to="/certificate" :class="{ active: isActive('/certificate') }" @click="toggleMobileMenu()">
+          _certificates
+        </NuxtLink>
+        
 
         <NuxtLink id="nav-link-mobile" to="/contact-me" :class="{ active: isActive('/contact-me') }" @click="toggleMobileMenu()">
           _contact-me

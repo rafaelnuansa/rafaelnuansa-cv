@@ -17,6 +17,17 @@
             <NuxtLink id="nav-link" to="/projects" :class="{ active: isActive('/projects') }">
               _projects
             </NuxtLink>
+
+            
+  
+            <NuxtLink id="nav-link" to="/experience" :class="{ active: isActive('/experience') }">
+              _experience
+            </NuxtLink>
+
+            
+            <NuxtLink id="nav-link" to="/certificate" :class="{ active: isActive('/certificate') }">
+              _certificates
+            </NuxtLink>
           </div>
 
           <NuxtLink id="nav-link-contact" to="/contact-me" :class="{ active: isActive('/contact-me')}">
