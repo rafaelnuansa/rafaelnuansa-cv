@@ -96,18 +96,73 @@
         },
         "5": {
             "title": "_patrol",
-            "description": "Presences Mobile App & Patrol for PT Tri garda buana sakti.",
+            "description": "Presences Mobile App & Patrol for PT Tri Garda Buana Sakti.",
             "img": "/images/projects/patrol.png",
             "tech": ["React"],
             "url": "#"
         },
         "6": {
             "title": "_kowaja",
-            "description": "Kowaja App Malaysian online loan application.",
+            "description": "Kowaja App Malaysian online loan application, ReactJS",
             "img": "/images/projects/kowaja.png",
             "tech": ["React"],
+            "url": "https://kowaja.netlify.app"
+        },
+        "7": {
+            "title": "_billiard-pos",
+            "description": "POS Billiard with InertiaJS, Laravel Reactjs.",
+            "img": "/images/projects/billiard.png",
+            "tech": ["React"],
             "url": "https://kowaja.vercel.app"
+        },
+        "8": {
+            "title": "_carwash-pos",
+            "description": "Carwash Mobile and CMS Laravel + Flutter.",
+            "img": "/images/projects/carwash.png",
+            "tech": ["React"],
+            "url": "https://kowaja.vercel.app"
+        },
+        "9": {
+            "title": "_asis_school",
+            "description": "Academics Smart School with Codeigniter",
+            "img": "/images/projects/asis.png",
+            "tech": ["Codeigniter"],
+            "url": "https://yanuris.or.id/asis/asisSMK/asispanel/"
+        },
+        "10": {
+            "title": "_ticketing-pos",
+            "description": "Ticket App with Flutter",
+            "img": "/images/projects/ticket.png",
+            "tech": ["React"],
+            "url": "https://www.instagram.com/reel/CxDEzx_yqSX/"
+        },
+        "11": {
+            "title": "_edgepos",
+            "description": "EdgePOS Laravel Point Of Sales",
+            "img": "/images/projects/edgepos.png",
+            "tech": ["React"],
+            "url": "https://v2.edgepos.site/"
+        },
+        "12": {
+            "title": "_heysnap",
+            "description": "Heysnap Photostudio Booking with Laravel",
+            "img": "/images/projects/heysnap.png",
+            "tech": ["React"],
+            "url": "https://heysnapv2.progranz.com"
+        },
+        "13": {
+            "title": "_bogor-berwisata",
+            "description": "Bogor Berwisata with Laravel + ReactJS",
+            "img": "/images/projects/bogor-wisata.png",
+            "tech": ["React"],
+            "url": "https://bogorberwisata.netlify.app/"
+        },
+        "14": {
+            "title": "_pokdarwis-tenjolaya",
+            "description": "Pokdarwis Tenjolaya with Laravel",
+            "img": "/images/projects/pokdarwis.png",
+            "tech": ["React"],
+            "url": "https://pokdarwistenjolaya.com/"
         }
-       
     }
 }

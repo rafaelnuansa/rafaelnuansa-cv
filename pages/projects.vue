@@ -9,14 +9,6 @@
     <div class="flex flex-col w-full overflow-hidden">
       
 
-      <!-- windows tab mobile -->
-      <div id="tab" class="flex lg:hidden items-center">
-          <span class="text-white"> // </span>
-          <p class="font-fira_regular text-white text-sm px-3">projects</p>
-          <span class="text-menu-text"> / </span>
-          <p v-for="filter in filters" :key="filter" class="font-fira_regular text-menu-text text-sm px-3">{{ filter }};</p>
-      </div>
-
       <!-- projects -->
       <div id="projects-case" class="grid grid-cols-1 lg:grid-cols-2 max-w-full h-full overflow-scroll lg:self-center">
         <div id="not-found" class="hidden flex flex-col font-fira_retina text-menu-text my-5 h-full justify-center items-center">
@@ -48,46 +40,11 @@ import { ref } from 'vue'
 
 const config = useRuntimeConfig()
 
-const techs = ['React', 'HTML', 'CSS', 'Vue', 'PHP', 'Flutter']
-const filters = ref(['all'])
-const showFilters = ref(true)
 const projects = ref(config.public.dev.projects)
 
-function filterProjects(tech) {
-  document.getElementById('icon-tech-' + tech).classList.toggle('active')
-  document.getElementById('title-tech-' + tech).classList.toggle('active')
-
-  const check = document.getElementById(tech)
-  if (check.checked) {
-    filters.value = filters.value.filter((item) => item !== 'all')
-    filters.value.push(tech)
-  } else {
-    filters.value = filters.value.filter((item) => item !== tech)
-    filters.value.length === 0 ? filters.value.push('all') : null
-  }
-  filters.value[0] == 'all' ? projects.value = config.public.dev.projects : projects.value = filterProjectsBy(filters.value)
-
-  if (projects.value.length === 0) {
-    document.getElementById('projects-case').classList.remove('grid')
-    document.getElementById('not-found').classList.remove('hidden')
-  } else {
-    document.getElementById('projects-case').classList.add('grid')
-    document.getElementById('not-found').classList.add('hidden')
-  }
-}
-
-function filterProjectsBy(filters) {
-  const projectArray = Object.values(config.public.dev.projects)
-  return projectArray.filter(project => {
-    return filters.some(filter => project.tech.includes(filter))
-  })
-}
 </script>
 
 <style>
-#filters {
-  padding: 10px 25px;
-}
 
 #tab {
   padding: 25px 25px 5px;
