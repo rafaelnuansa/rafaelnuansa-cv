@@ -98,7 +98,7 @@
       "description": "Presences Mobile App & Patrol for PT Tri Garda Buana Sakti.",
       "img": "/images/projects/patrol.png",
       "tech": ["React"],
-      "url": "#"
+      "url": "https://dev-absen.onetsb.com"
     },
     "6": {
       "title": "_kowaja",
@@ -112,14 +112,14 @@
       "description": "POS Billiard with InertiaJS, Laravel Reactjs.",
       "img": "/images/projects/billiard.png",
       "tech": ["React"],
-      "url": "https://kowaja.vercel.app"
+      "url": "https://billiard.posxsolution.com"
     },
     "8": {
       "title": "_carwash-pos",
       "description": "Carwash Mobile and CMS Laravel + Flutter.",
       "img": "/images/projects/carwash.png",
       "tech": ["React"],
-      "url": "https://kowaja.vercel.app"
+      "url": "https://billiard.posxsolution.com"
     },
     "9": {
       "title": "_asis_school",
@@ -162,6 +162,14 @@
       "img": "/images/projects/pokdarwis.png",
       "tech": ["React"],
       "url": "https://pokdarwistenjolaya.com/"
+    },
+    
+    "15": {
+      "title": "_donasi-online",
+      "description": "Donasi Online Bina Iman Mulia",
+      "img": "/images/projects/donasi.png",
+      "tech": ["React"],
+      "url": "https://donasi.binaimanmulia.id/"
     }
   }
 }
